@@ -1,6 +1,6 @@
 package com.mycomp.in.intities;
 
-public interface Person {
+public interface IPerson {
     String uuid();
     String name();
     String address();

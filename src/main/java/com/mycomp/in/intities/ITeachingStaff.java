@@ -1,6 +1,6 @@
 package com.mycomp.in.intities;
 
-public interface TeachingStaff extends Person{
+public interface ITeachingStaff extends IPerson{
    public String specification();
    public String salary();
    public String designation(); 

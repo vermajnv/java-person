@@ -1,6 +1,6 @@
 package com.mycomp.in.intities;
 
-public interface Student extends Person{
+public interface IStudent extends IPerson{
     public String rollNumber();
     String course();
     String college(); 
