@@ -3,3 +3,4 @@ pom.xml
 .project
 .classpath
 .settings
+.vscode
