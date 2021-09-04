@@ -1,7 +1,7 @@
 package com.mycomp.in.intities;
 
-public interface ICourse {
+public interface ICourse extends ISubject{
     public String id();
     public String duration();
-    public String[] subject();
+    public ISubject[] subjects();
 }
