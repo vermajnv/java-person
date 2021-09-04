@@ -2,6 +2,7 @@ package com.mycomp.in.implementaion;
 
 import com.mycomp.in.intities.ICollege;
 import com.mycomp.in.intities.ICourse;
+import com.mycomp.in.intities.IPerson;
 import com.mycomp.in.intities.IStudent;
 
 public class College implements ICollege{
@@ -43,5 +44,8 @@ public class College implements ICollege{
     public IStudent[] students() {
         return this.students;
     }
-    
+   
+    public IStudent takeAdminssion(IPerson person){
+        return new Student(uuid, name, address, rollNumber, course, person, college)
+    }
 }
