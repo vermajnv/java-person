@@ -45,7 +45,7 @@ public class College implements ICollege{
         return this.students;
     }
    
-    public IStudent takeAdminssion(IPerson person){
-        return new Student(uuid, name, address, rollNumber, course, person, college)
+    public IStudent takeAdminssion(IPerson person, String rollNumber, ICollege college, ICourse course){
+        return new Student(rollNumber, course, person, college);
     }
 }

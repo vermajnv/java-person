@@ -15,10 +15,7 @@ public class Student implements IStudent{
     private IPerson person;
     private ICollege college;
 
-    public Student(String uuid, String name, String address, String rollNumber, ICourse course, IPerson person, ICollege college){
-        this.uuid = uuid;
-        this.name = name;
-        this.address = address;
+    public Student(String rollNumber, ICourse course, IPerson person, ICollege college){
         this.rollNumber = rollNumber;
         this.course = course;
         this.person = person;
