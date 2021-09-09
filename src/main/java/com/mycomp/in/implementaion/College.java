@@ -1,5 +1,7 @@
 package com.mycomp.in.implementaion;
 
+import java.util.List;
+
 import com.mycomp.in.intities.ICollege;
 import com.mycomp.in.intities.ICourse;
 import com.mycomp.in.intities.IPerson;
@@ -10,10 +12,10 @@ public class College implements ICollege{
     private String regNo;
     private String name;
     private String location;
-    private ICourse[] courses;
+    private List<ICourse> courses;
     private IStudent[] students;
 
-    public College(String regNo, String name, String location, ICourse[] courses){
+    public College(String regNo, String name, String location, List<ICourse> courses){
         this.regNo = regNo;
         this.name = name;
         this.location = location;
@@ -36,7 +38,7 @@ public class College implements ICollege{
     }
 
     @Override
-    public ICourse[] courses() {
+    public List<ICourse> courses() {
         return this.courses;
     }
 

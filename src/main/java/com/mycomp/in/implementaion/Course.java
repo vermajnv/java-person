@@ -1,5 +1,7 @@
 package com.mycomp.in.implementaion;
 
+import java.util.List;
+
 import com.mycomp.in.intities.ICourse;
 import com.mycomp.in.intities.ISubject;
 
@@ -7,10 +9,10 @@ public class Course implements ICourse{
 
     private String id;
     private String duration;
-    private ISubject[] subjects;
+    private List<ISubject> subjects;
     private String name;
 
-    public Course(String id, String duration, ISubject[] subjects){
+    public Course(String id, String duration, List<ISubject> subjects){
         this.id = id;
         this.duration = duration;
         this.subjects = subjects;
@@ -30,7 +32,7 @@ public class Course implements ICourse{
         return this.name;
     }
     @Override
-    public ISubject[] subjects() {
+    public List<ISubject> subjects() {
         return this.subjects;
     }
 
