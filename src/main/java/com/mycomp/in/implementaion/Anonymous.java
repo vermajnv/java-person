@@ -3,7 +3,5 @@ package com.mycomp.in.implementaion;
 import com.mycomp.in.intities.IAnonymous;
 
 public class Anonymous {
-    IAnonymous data = () -> {
-        return "Nayan";
-    };
+    IAnonymous data = () -> "Nayan";
 }
