@@ -7,7 +7,7 @@ import com.mycomp.in.intities.IStudent;
 
 public class Student implements IStudent{
 
-    private String uuid;
+    private int uuid;
     private String name;
     private String address;
     private String rollNumber;
@@ -23,7 +23,7 @@ public class Student implements IStudent{
     }
 
     @Override
-    public String uuid() {
+    public int uuid() {
         
         return this.uuid;
     }

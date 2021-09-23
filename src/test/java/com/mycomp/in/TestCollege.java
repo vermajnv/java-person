@@ -3,13 +3,16 @@ package com.mycomp.in;
 import static com.mycomp.in.comman.Logger.log;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.mycomp.in.implementaion.College;
 import com.mycomp.in.implementaion.Course;
 import com.mycomp.in.implementaion.Subject;
 import com.mycomp.in.intities.ICollege;
 import com.mycomp.in.intities.ICourse;
+import com.mycomp.in.intities.IPerson;
 import com.mycomp.in.intities.ISubject;
 
 public class TestCollege {
@@ -24,6 +27,8 @@ public class TestCollege {
         courses.add(new Course("121", "4", subjects));
         courses.add(new Course("122", "5", subjects));
         ICollege college = new College("111", "United", "Allahabad", courses);
+        Map<IPerson, ICourse> studentMap = new HashMap<IPerson, ICourse>();
+        //studentMap.put(person, arg1)
         //college.takeAdminssion(person)
     }  
 }
